@@ -1,0 +1,391 @@
+/*
+Theme Name: Element custom theme
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+* {
+  font-family: Geometria, sans-serif;
+  color: #4f4f4f;
+  margin: 0;
+}
+
+.block-bg {
+  position: absolute;
+  top: -25%;
+  left: 0;
+  background: rgba(237, 233, 224, 0.92);
+  opacity: 0.77;
+  border-radius: 0px 0px 30px 0px;
+  width: 100%;
+  height: 40rem;
+  z-index: 35;
+}
+
+.block-content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 22.7rem;
+  z-index: 36;
+}
+
+.header,
+.header-wrapper {
+  z-index: 36;
+
+  background-color: rgba(0, 0, 0, 0);
+}
+.header-bg-color,
+.header-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.logo-left .logo {
+  margin-left: -10vw;
+  width: 135px;
+}
+
+.header:not(.transparent) .header-nav.nav > li > a {
+  color: #4f4f4f;
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.interior-block {
+  border-radius: 32px;
+}
+.count {
+  display: none;
+}
+
+span.widget-title {
+  font-size: 1em;
+  font-weight: 600;
+  display: none;
+}
+
+ul.menu > li,
+.widget > ul > li {
+  list-style: none;
+  margin-bottom: 0.3em;
+  text-align: left;
+  margin: 14px 10vw;
+  width: 411px;
+  height: 39px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(125, 125, 125, 0.29);
+  border-radius: 28px;
+  color: #4f4f4f;
+}
+ul.menu > li > a,
+ul.menu > li > span:first-child,
+.widget > ul > li > a,
+.widget > ul > li > span:first-child {
+  display: inline-block;
+  -ms-flex: 1;
+  flex: 1;
+  color: #4f4f4f;
+  padding: 6px 0 6px 3vw;
+}
+
+ul > li {
+  list-style: none;
+}
+
+/* скрыли мобилку */
+.ver-mob {
+  display: none;
+}
+/* дальше стили для десктопа */
+* {
+  font-family: Geometria, sans-serif;
+  color: #4f4f4f;
+  margin: 0;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+.ver-desk {
+  margin: 1rem auto 0;
+}
+
+nav {
+  width: 100%;
+  max-width: 1440px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 135px;
+  background-image: url(img/LOGO.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 2rem;
+}
+
+.nav-group {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-right: 4.8vw;
+  font-size: 1.43rem;
+}
+
+.nav-item:active {
+  font-weight: bold;
+  font-size: 1.43rem;
+
+  color: rgba(154, 146, 125, 0.92);
+}
+
+.sec-hat {
+  position: relative;
+}
+
+.block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 31.5rem;
+  position: relative;
+  top: 0;
+}
+
+.block-bg {
+  position: absolute;
+  /*   top: -50px; */
+  left: 0;
+  background: rgba(237, 233, 224, 0.92);
+  opacity: 0.77;
+  border-radius: 0px 0px 30px 0px;
+  width: 100%;
+  height: 40rem;
+  /*   z-index: -1; */
+}
+.block-content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 30rem;
+}
+
+.block-content h2 {
+  margin-bottom: 2.2rem;
+  text-align: left;
+}
+.block-content p {
+  margin-bottom: 1.3rem;
+  text-align: left;
+}
+.interior-block {
+  position: absolute;
+  top: 18%;
+  right: 4vw;
+  border-radius: 32px;
+  background-image: url(https://timetolead.site/wp-content/uploads/2020/06/int-block.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48vw;
+  height: 30rem;
+  /*     z-index: -2; */
+}
+
+.sec-desc {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10rem 15vw 10rem;
+}
+
+.sec-desc_img {
+  width: 325px;
+  height: 270px;
+  background-image: url(https://timetolead.site/wp-content/uploads/2020/06/sec-desc_img.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sec-desc-txt {
+  width: 388px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 18px;
+}
+.sec-desc-txt p {
+  margin: 1rem 0;
+}
+
+.sec-desc-txt button {
+  border-style: none;
+  outline: none;
+  width: 150px;
+  height: 37.62px;
+  background: rgba(224, 236, 237, 0.92);
+  border-radius: 28.5px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.sec-desc-txt button:active {
+  background: rgba(193, 225, 227, 0.92);
+}
+
+.sec-cat {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.sidebar-wrapper.ul-reset {
+  width: 50%;
+}
+
+.sec-cat h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sec-cat_wrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1440px;
+  width: 100%;
+  margin: 7rem 10rem;
+}
+
+.list h2 {
+  width: 411px;
+  height: 39px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(125, 125, 125, 0.29);
+  border-radius: 28px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+.list p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  width: 338px;
+  padding: 1rem 3rem;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.item {
+  background-image: url(https://timetolead.site/wp-content/uploads/2020/06/0206.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 15px;
+  width: 180px;
+  height: 120px;
+}
+
+.item-label {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.22);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.list-wrap button {
+  border-style: none;
+  outline: none;
+  width: 180.62px;
+  height: 39px;
+  background: #ede9e0;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.list-wrap button:active {
+  background: rgba(193, 225, 227, 0.92);
+}
+.header:not(.transparent) .header-nav.nav > li > a {
+  font-size: 1.43rem;
+}
+.nav-spacing-xlarge > li {
+  margin-right: 3.8vw;
+}
+
+.container-width,
+.full-width .ubermenu-nav,
+.container,
+.row {
+  max-width: 1210px;
+}
+
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+@media screen and (max-width: 600px) {
+  .ver-mob {
+    display: flex;
+  }
+  .ver-desk {
+    display: none;
+  }
+}
