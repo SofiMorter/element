@@ -1,12 +1,18 @@
-/*
-Theme Name: Element custom theme
-Description: This is a child theme for Flatsome Theme
-Author: UX Themes
-Template: flatsome
-Version: 3.0
-*/
+/* скрыли мобилку */
+.ver-mob {
+  display: none;
+}
+/* дальше стили для десктопа */
+* {
+  font-family: Geometria, sans-serif;
+  color: #4f4f4f;
+  margin: 0;
+}
 
-/*************** ADD CUSTOM CSS HERE.   ***************/
+a {
+  outline: none;
+  text-decoration: none;
+}
 
 * {
   font-family: Geometria, sans-serif;
@@ -101,23 +107,9 @@ ul.menu > li > span:first-child,
 
 ul > li {
   list-style: none;
+  margin-bottom: 11px;
 }
 
-/* скрыли мобилку */
-.ver-mob {
-  display: none;
-}
-/* дальше стили для десктопа */
-* {
-  font-family: Geometria, sans-serif;
-  color: #4f4f4f;
-  margin: 0;
-}
-
-a {
-  outline: none;
-  text-decoration: none;
-}
 .ver-desk {
   margin: 1rem auto 0;
 }
@@ -278,7 +270,8 @@ nav {
   width: 50%;
 }
 
-.sec-cat h2 {
+.sec-cat,
+.sec-blog > h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,21 +289,23 @@ nav {
   margin: 7rem 10rem;
 }
 
-.list h2 {
-  width: 411px;
-  height: 39px;
+.list > h2 {
+  width: 25.6875rem;
+  height: 2.4375rem;
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(125, 125, 125, 0.29);
-  border-radius: 28px;
+  border-radius: 1.75rem;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  padding: 0.75rem 0 0 0.9375rem;
+  margin-bottom: 1rem;
 }
 .list p {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  width: 338px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  width: 21.125rem;
   padding: 1rem 3rem;
 }
 
@@ -342,8 +337,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 140px;
-  height: 40px;
+  width: 8.75rem;
+  height: 2.5rem;
   background: #ffffff;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.22);
   border-radius: 10px 10px 0px 0px;
@@ -352,13 +347,13 @@ nav {
 .list-wrap button {
   border-style: none;
   outline: none;
-  width: 180.62px;
-  height: 39px;
+  width: 11.2888rem;
+  height: 2.4375rem;
   background: #ede9e0;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
   text-transform: uppercase;
 }
 
@@ -379,11 +374,91 @@ nav {
   max-width: 1210px;
 }
 
+.block-desc_img {
+  background-image: url(img/unique.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 32px;
+  width: 417px;
+  height: 277px;
+}
+
+.block-desc_label {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 308px;
+  height: 84px;
+  background: #ffffff;
+  box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 50px 50px 0px 0px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #4f4f4f;
+}
+
+.sec-pref {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  justify-content: space-evenly;
+  margin-bottom: 10rem;
+}
+
+.block-desc > ul > li {
+  /* list-style-image: url(img/bullet.svg); */
+  padding-left: 3rem;
+  background-image: url(img/bullet.svg);
+  background-position: 0 0;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.sec-blog{
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.blog-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 13vw 13vw 13vw 13vw;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  justify-items: center;
+}
+
+.blog-item {
+  width: 250px;
+  height: 150px;
+  left: 194px;
+  top: 2164px;
+  background: url(img/blog-item.jpg);
+  border-radius: 18px;
+  justify-self: center;
+}
+
 /*************** ADD MOBILE ONLY CSS HERE  ***************/
 
 @media screen and (max-width: 600px) {
   .ver-mob {
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
   }
   .ver-desk {
     display: none;
