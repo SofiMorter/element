@@ -536,7 +536,7 @@ line-height: 35px;
    top: 25%; 
    left: 50%;                        
    transform: translate(-50%, -50%) }   
-}
+
 /*************** ADD MOBILE ONLY CSS HERE  ***************/
 
 @media screen and (max-width: 600px) {
