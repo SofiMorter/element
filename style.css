@@ -574,6 +574,20 @@ button {
   border-radius: 20px;
 }
 
+.tab-content > ul > li {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+
+.tab-content > ul > li:active,
+.tab-content > ul > li:hover {
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(154, 146, 125, 0.92);
+}
+
 .catalog-content {
   display: flex;
   justify-content: center;
