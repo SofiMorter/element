@@ -3,8 +3,11 @@
   display: none;
 }
 /* дальше стили для десктопа */
-body {
+
+* {
   font-family: Geometria, sans-serif;
+}
+body {
   color: #4f4f4f;
   margin: 0 auto;
 }
@@ -142,7 +145,8 @@ nav {
   font-size: 1.43rem;
 }
 
-.nav-item:active {
+.nav-item:active,
+.nav-item:hover {
   font-weight: bold;
   font-size: 1.43rem;
 
@@ -507,9 +511,9 @@ footer h2 {
   transform: translate(-50%, -50%);
 }
 
-.contacts{
-font-size: 18px;
-line-height: 35px;
+.contacts {
+  font-size: 18px;
+  line-height: 35px;
 }
 
 .brown {
@@ -531,11 +535,112 @@ line-height: 35px;
   color: ffffff;
   position: relative;
 }
-.footer-last-line p{
-  position: absolute;               
-   top: 25%; 
-   left: 50%;                        
-   transform: translate(-50%, -50%) }   
+.footer-last-line p {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* *********************стили для каталога************ */
+.brand-switcher {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 95px 0 auto;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.brand-btn {
+  width: 122px;
+  height: 41px;
+  background: #ffffff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #4f4f4f;
+  margin: 0 15px 0;
+}
+.brand-btn:active,
+.brand-btn:hover {
+  background: #ede9e0;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+}
+
+.catalog-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.catalog-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 320px;
+}
+
+.catalog-sidebar input,
+.tab-content {
+  display: none;
+}
+
+.tab-title {
+  display: block;
+  background: #ffffff;
+  box-shadow: 1px 1px 6px rgba(125, 125, 125, 0.19);
+  border-radius: 20px;
+  width: 320px;
+  line-height: 30px;
+  margin: 0 auto 15px;
+  padding: 0 0 0 35px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #4f4f4f;
+  cursor: pointer; /* Вид курсора */
+}
+
+.tab-title:hover,
+.tab-title:hover,
+.catalog-sidebar :checked + .tab-title {
+  background: #ede9e0;
+  box-shadow: 1px 1px 6px rgba(125, 125, 125, 0.19);
+}
+
+.tab-content {
+  padding: 10px 20px; /* Поля вокруг текста */
+}
+
+.catalog-sidebar :checked ~ .tab-content {
+  display: block; /* Показываем содержимое */
+}
+
+.sidebar-item {
+  background: #ffffff;
+  box-shadow: 1px 1px 6px rgba(125, 125, 125, 0.19);
+  border-radius: 20px;
+  width: 320px;
+  line-height: 30px;
+  margin: 0 auto 15px;
+  padding: 0 0 0 35px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #4f4f4f;
+}
+.sidebar-item:active,
+.sidebar-item:hover {
+  background: #ede9e0;
+  box-shadow: 1px 1px 6px rgba(125, 125, 125, 0.19);
+}
 
 /*************** ADD MOBILE ONLY CSS HERE  ***************/
 
