@@ -540,6 +540,7 @@ footer h2 {
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 /* *********************стили для каталога************ */
@@ -586,19 +587,22 @@ button {
   font-size: 13px;
   line-height: 16px;
   color: rgba(154, 146, 125, 0.92);
+  font-weight: bold;
+
 }
 
 .catalog-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 65px;
 }
 
 .catalog-sidebar {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 320px;
+  /* max-width: 320px; */
 }
 
 .catalog-sidebar input,
@@ -630,7 +634,7 @@ button {
 }
 
 .tab-content {
-  padding: 10px 20px; /* Поля вокруг текста */
+  /* padding: 10px 20px; Поля вокруг текста */
 }
 
 .catalog-sidebar :checked ~ .tab-content {
@@ -654,6 +658,43 @@ button {
 .sidebar-item:hover {
   background: #ede9e0;
   box-shadow: 1px 1px 6px rgba(125, 125, 125, 0.19);
+}
+
+/* ****** стили для сетки товаров ***** */
+.catalog-items-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  grid-template-rows: repeat(5, 155px);
+  grid-gap: 60px 20px;
+  
+}
+
+.catalog-item-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.catalog-item-img {
+  background: url(img/itemimg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 180px;
+  max-height: 120px;
+  border-radius: 15px;
+}
+.grid-wrapper{
+  margin: 0 0 90px 90px;
+}
+h3 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 auto 35px;
+
+  color: rgba(154, 146, 125, 0.92);
 }
 
 /*************** ADD MOBILE ONLY CSS HERE  ***************/
