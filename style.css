@@ -770,7 +770,7 @@ div[class^="gallery-img"] {
 
 .key {
   border-right: 4px solid #ededed;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
@@ -882,13 +882,13 @@ td {
 }
 
 /* ***************дальше стили для страницы поста блога ************ */
-.post-wrapper{
+.post-wrapper {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 100px;
 }
-.blog-related-posts > h3{
- margin-bottom: 50px;
+.blog-related-posts > h3 {
+  margin-bottom: 50px;
 }
 .post-img {
   background-image: url(img/blog-post.jpg);
@@ -905,6 +905,62 @@ td {
 .blog-related-posts-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+/* *****стили для контактов**** */
+
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-column {
+  max-width: 220px;
+  margin-right: 20px;
+}
+
+.contact-table .key {
+  border-right: none;
+  font-weight: 500;
+  font-size: 18px;
+  height: 20px;
+  padding: 0;
+}
+.contact-column:last-child {
+  margin-right: 0;
+}
+
+.contact-column > h3 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31px;
+  color: #9a927d;
+}
+.contact-table .value {
+  font-weight: normal;
+  font-size: 18px;
+  height: 40px;
+  padding: 0;
+}
+
+
+/* ********** стили для формы ******** */
+.form-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  text-align: start;
+}
+input{
+  width: 200px;
+  border: none;
+  outline: none;
 }
 
 /*************** ADD MOBILE ONLY CSS HERE  ***************/
