@@ -557,7 +557,7 @@ button {
 }
 
 .brand-btn {
-  width: 122px;
+  width: 125px;
   height: 41px;
   background: #ffffff;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.14);
@@ -580,6 +580,7 @@ button {
   font-size: 13px;
   line-height: 16px;
   color: #4f4f4f;
+  max-width: 100%;
 }
 
 .tab-content > ul > li:active,
@@ -588,7 +589,7 @@ button {
   line-height: 16px;
   color: rgba(154, 146, 125, 0.92);
   font-weight: bold;
-
+  max-width: 100%;
 }
 
 .catalog-content {
@@ -633,10 +634,6 @@ button {
   box-shadow: 1px 1px 6px rgba(125, 125, 125, 0.19);
 }
 
-.tab-content {
-  /* padding: 10px 20px; Поля вокруг текста */
-}
-
 .catalog-sidebar :checked ~ .tab-content {
   display: block; /* Показываем содержимое */
 }
@@ -666,7 +663,6 @@ button {
   grid-template-columns: repeat(4, 180px);
   grid-template-rows: repeat(5, 155px);
   grid-gap: 60px 20px;
-  
 }
 
 .catalog-item-title {
@@ -685,7 +681,7 @@ button {
   max-height: 120px;
   border-radius: 15px;
 }
-.grid-wrapper{
+.grid-wrapper {
   margin: 0 0 90px 90px;
 }
 h3 {
@@ -697,6 +693,150 @@ h3 {
   color: rgba(154, 146, 125, 0.92);
 }
 
+/* *******стили для карточки товара***** */
+
+.page-content-wrapper {
+  max-width: 1440px;
+  margin: 100px auto;
+}
+
+.item-character-wrapper {
+  display: flex;
+  max-width: 1440px;
+  justify-content: space-around;
+}
+.item-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.breadcrumbs {
+  align-self: flex-start;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(79, 79, 79, 0.51);
+  margin-bottom: 40px;
+}
+.item-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  min-width: 550px;
+  min-height: 310px;
+  width: 100%;
+  /* height: 100%; */
+  grid-gap: 15px 20px;
+}
+.gallery-img-big {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  background: url(img/itemimg.jpg);
+  border-radius: 22px;
+}
+
+div[class^="gallery-img"] {
+  border-radius: 7px;
+}
+
+.gallery-img-1 {
+  grid-column: 1;
+  grid-row: 1;
+  background: url(img/itemimg.jpg);
+}
+.gallery-img-2 {
+  grid-column: 1;
+  grid-row: 2;
+  background: url(img/itemimg.jpg);
+}
+.gallery-img-3 {
+  grid-column: 1;
+  grid-row: 3;
+  background: url(img/itemimg.jpg);
+}
+
+.item-description {
+  max-width: 430px;
+}
+
+.character-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #4f4f4f;
+  margin: 0 0 30px;
+  padding-left: 30px;
+}
+
+.key {
+  border-right: 4px solid #ededed;
+  border-collapse: collapse;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(154, 146, 125, 0.92);
+}
+.value {
+  max-width: 250px;
+  font-size: 18px;
+  color: #4f4f4f;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  height: 30px;
+  padding: 15px 30px;
+}
+
+.related-items-feed {
+  min-width: calc(550px - 20px);
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 100px auto;
+  padding-left: calc(550px / 6 + 20px);
+}
+
+.related-items-feed > p {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(154, 146, 125, 0.92);
+  margin-bottom: 50px;
+}
+
+.related-item-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.related-item-img {
+  background: url(img/itemimg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  width: 180px;
+  height: 120px;
+
+  border-radius: 15px;
+}
+.related-item:last-child {
+  margin-right: 0;
+}
+
+.related-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.related-item > p {
+  align-self: center;
+  font-weight: 500;
+  font-size: 15px;
+}
 /*************** ADD MOBILE ONLY CSS HERE  ***************/
 
 @media screen and (max-width: 600px) {
