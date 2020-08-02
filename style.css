@@ -856,10 +856,11 @@ input {
   border: none;
   outline: none;
 }
-
+.tablet-burger-btn {
+  display: none;
+}
 /* ----------- Планшеты ----------- */
 
-/* Portrait and Landscape */
 @media (min-width: 800px) and (max-width: 1200px) {
   .interior-block {
     left: 45%;
@@ -906,10 +907,21 @@ input {
     font-size: 1rem;
   }
 
-  
   .item7,
   .item8 {
     display: none;
+  }
+
+  /* -------------- Каталог - товары --------------- */
+  .grid-wrapper {
+    margin: 0 0 90px 40px;
+  }
+
+  .tab-title {
+    width: 30vw;
+    padding: 0 0 0 20px;
+    font-weight: 400;
+    font-size: 0.9rem;
   }
 }
 
@@ -994,6 +1006,71 @@ input {
   }
   .footer-content {
     max-width: 80vw;
+  }
+
+  .catalog-sidebar,
+  .brand-switcher {
+    display: none;
+  }
+  .catalog-items-grid {
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(8, 155px);
+  }
+  .grid-wrapper {
+    margin: 0 auto;
+  }
+  /* ----------бургер для планшетов------------ */
+
+  .tablet-burger-btn {
+    width: 150px;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.14);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 10vh;
+    transform: translateX(-50%);
+    
+  }
+  .burger-list li {
+    list-style: none;
+    padding: 10px;
+  }
+  .burger-list {
+    background-color: #ede9e0;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    width: 40%;
+    align-self: center;
+    margin: 0;
+    padding: 50px;
+  }
+  .overlay {
+    height: 100%;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .burger-list-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    
+  }
+  .burgerIsShown{
+    display: flex;
   }
 }
 
